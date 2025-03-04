@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Fluido Impressionante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            animation: fadeIn 5s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            width: 90%;
+            margin-top: 20px;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao site fluido!</h1>
+    <p>Explore os elementos interativos abaixo.</p>
+    <div class="container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+        <div class="box">Item 4</div>
+    </div>
+</body>
+</html>
