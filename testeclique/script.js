@@ -33,10 +33,32 @@ function clicar(){
             }else if(quantidade_cliques >= 40 && quantidade_cliques < 60){
                 res.innerHTML = 'Po maluco ta bom d+ da conta'
                 imagens.innerHTML = '<img id="res_imagem" src="imagens/cara bombado.avif" alt=""></img>'
-            }else if(quantidade_cliques >= 60){
+            }else if(quantidade_cliques >= 60 && quantidade_cliques < 69){
                 res.innerHTML = 'HACKER'
                 imagens.innerHTML = '<img id="res_imagem" src="imagens/hacker.webp" alt=""></img>'
-            }else{
+            }else if (quantidade_cliques == 69){
+                res.innerHTML = 'VOCÊ GOSTA DE HOMENS'
+                res.style.color = 'purple'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/entao ele é.jpg" alt=""></img>'
+            }else if(quantidade_cliques > 69 && quantidade_cliques < 80){
+                res.innerHTML = 'De tanto apertar esse mouse tu vai ficar calvo'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/calvo.jpeg" alt=""></img>'
+            }else if(quantidade_cliques >= 80 && quantidade_cliques < 90){
+                res.innerHTML = 'VC É NIVEL NEGÃO'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/bombado.webp" alt=""></img>'
+            }else if(quantidade_cliques >= 90 && quantidade_cliques < 100){
+                res.innerHTML = 'Po tu é rapido pra degraça'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/sonic.png" alt=""></img>'
+
+            }else if(quantidade_cliques >= 100 && quantidade_cliques < 110){
+                res.innerHTML = 'AGORA VOCÊ É NIVEL LUQUETS BOMBADO'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/luquets.jpg" alt=""></img>'
+            }else if(quantidade_cliques >= 110){
+                res.innerHTML = 'LELECO POR FAVOR CONTENHA-SE'
+                imagens.innerHTML = '<img id="res_imagem" src="imagens/leleco.jpg" alt=""></img>'
+                res.style.color = 'red'
+            }   
+            else{
                 imagens.innerHTML = '<img id="res_imagem" src="imagens/sem clicar.avif" alt=""></img>'
                 res.innerHTML = 'CLICA AI MEU'
                 res.style.color = 'red'
@@ -47,7 +69,7 @@ function clicar(){
 }, 1000)
     }else{
         if(botao.innerHTML == 'Clique o máximo'){
-            cliques ++
+            cliques += 1
             qcliques.innerHTML = cliques
         }
     }
