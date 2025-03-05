@@ -1,0 +1,14 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: black;
+}
+.planetas{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}

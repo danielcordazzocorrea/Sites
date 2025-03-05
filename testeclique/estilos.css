@@ -31,6 +31,12 @@ section{
     border-radius: 20px;
     border: none;
     font-size: 1.5em;
+    transition: .2s;
+    cursor: pointer;
+}
+#botao:active{
+    transform: scale(0.95);
+    background-color: rgb(218, 215, 215);
 }
 .botao_tentar{
     padding: 10px;
@@ -38,9 +44,20 @@ section{
     border: none;
     background-color: rgb(183, 183, 250);
     margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.botao_tentar:hover{
+    background-color: rgb(218, 214, 214);
+    transform: scale(1.2);
+}
+.botao_tentar:active{
+    transform: scale(0.95);
+}
+
 #res_imagem{
     width: 150px;
     height: 150px;
     margin: 10px;
+    transition: 0.2s;
 }
