@@ -9,7 +9,7 @@ function clicar(){
         intervalo = setInterval(() =>{
         cont ++
         contador.innerHTML = cont
-        if (cont == 5){
+        if (cont == 10){
             clearInterval(intervalo)
             botao.innerHTML = 'Acabou o tempo'
             contador.innerHTML = 0
