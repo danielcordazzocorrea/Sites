@@ -1,4 +1,32 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes fadein_h1{
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadein_p{
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadein_img{
+    from{
+        transform: translateX(100px) rotate(90deg);
+    }
+    to{
+    transform: translateX(0px) rotate(0deg);
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -6,9 +34,66 @@
 }
 body, html{
     background-color: black;
+    background-image: url(../imagens/fundo.png);
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+main{
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    gap: 50px;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 .planetas{
     width: 100px;
     height: 100px;
-    background-color: white;
+    border-radius: 50%;
+}
+#saturno{
+    width: 200px;
+}
+.planetas_link{
+    transition: .4s;
+}
+.planetas_link:hover{
+    transform: scale(1.7) rotate(45deg);
+    margin: 10px;
+    transition: .4 ease-in-out;
+}
+#seta{
+    font-size: 3em;
+    margin: 20px;
+    color: white;
+}
+header{
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    margin-top: -50px;
+}
+h1{
+    font-size: 3em;
+    animation: fadein_h1 2s;
+}
+article > p{
+    width: 40vw;
+    margin: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    animation: fadein_p 2s;
+}
+.planeta{
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-right: 50px;
+    border-radius: 50%;
+    animation: fadein_img 1s;
+}
+#seta:hover{
+    transition: .4s;
+    transform: scale(1.2);
+    color: rgb(219, 219, 219);
 }
