@@ -73,7 +73,8 @@ main{
     border-radius: 50%;
 }
 #saturno{
-    width: 200px;
+    width: 250px;
+    height: 125px;
 }
 .planetas_link{
     transition: .4s;
@@ -118,6 +119,7 @@ article > ul{
 }
 .planeta{
     width: 400px;
+    height: 400px;
     margin-right: 50px;
     border-radius: 50%;
     animation: fadein_img 1s;
@@ -147,7 +149,7 @@ p#eixo{
 }
 .imagem_ativa{
     transition: .2s;
-    transform: scale(1.1) rotate(177deg);
+    transform: scale(1.1);
 }
 .imagem_inativa{
     transition: .2s;
@@ -155,4 +157,8 @@ p#eixo{
 }
 #escrita_venus{
     font-size: 1.1em;
+}
+#img_saturno{
+    height: 350px;
+    width: 700px;
 }
