@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@media screen and (max-width: 1040px){
+    article > p{
+        width: 80vw;
+    }
+    article{
+        margin-left: 20px;
+    }
+    #pag{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+}
+@media screen and (max-width: 1140px) and (min-width:570px){
+    #img_saturno{
+        height: 250px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 570px){
+    #img_saturno{
+        height: 200px;
+        width: 400px;
+    }
+}

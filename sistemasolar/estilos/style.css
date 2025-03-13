@@ -138,6 +138,7 @@ p#eixo{
     margin-top: 20px;
     font-size: 1.5em;
     color: black;
+    text-align: center;
 }
 .ativa{
     animation: entrar_eixo 1s;
@@ -155,10 +156,7 @@ p#eixo{
     transition: .2s;
     transform: scale(1);
 }
-#escrita_venus{
-    font-size: 1.1em;
-}
 #img_saturno{
-    height: 350px;
-    width: 700px;
+    height: 300px;
+    width: 600px;
 }
