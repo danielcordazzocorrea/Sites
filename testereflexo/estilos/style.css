@@ -1,0 +1,32 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(194, 230, 230);
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+#botao{
+    text-align: center;
+}
+button{
+    width: 50vw;
+    height: 200px;
+    font-size: 2em;
+    border-radius: 20px;
+    border: none;
+    background-color: #5f9ea0;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+    transition: .2s;
+}
+button:hover{
+    background-color: #7da6a7;
+}
+button:active{
+    transform: scale(0.93);
+}
