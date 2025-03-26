@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <style>
+        /* Reset de margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: lightgrey;
+            padding: 10px;
+        }
+
+        #menu {
+            display: none; /* Escondido por padrão */
+            text-align: center;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        #links a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            display: inline;
+        }
+
+        /* Regras para telas menores que 768px */
+        @media screen and (max-width: 768px) {
+            #menu {
+                display: block; /* Torna o menu visível */
+            }
+
+            #links {
+                display: none; /* Esconde os links por padrão */
+            }
+
+            #links.ativo a{
+                display: block; /* Exibe os links quando a classe 'ativo' é adicionada */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menu Responsivo</h1>
+    </header>
+
+    <nav>
+        <div id="menu">☰</div>
+        <div id="links">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+
+    <script>
+        // Espera o DOM estar carregado para garantir que os elementos existem
+        document.addEventListener("DOMContentLoaded", function() {
+            let menu = document.getElementById("menu");
+            let links = document.getElementById("links");
+
+            // Adiciona o evento de clique no menu
+            menu.addEventListener("click", function() {
+                links.classList.toggle("ativo");
+            });
+        });
+    </script>
+
+</body>
+</html>

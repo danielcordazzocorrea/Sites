@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+nav{
+    background-color: lightgrey;
+    padding: 10px;
+}
+#menu{
+    display: none;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+#links a{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    #menu{
+        display: block;
+    }
+    #links{
+        display: none;
+    }
+    .ativo{
+        display: block;
+    }
+}
