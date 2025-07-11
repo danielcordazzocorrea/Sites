@@ -13,8 +13,57 @@
     <main>
         <section>
             <h2>Coloque as moedas que quer converter:</h2>
-            <input type="number" id="moeda1" min="0" placeholder="Valor da moeda1">
-            <input type="number" id="moeda2" min="0" placeholder="Valor da moeda2">
+            <div class="conversor">
+                <input list="opcoes" id="pesquisa1" name="opcao1" placeholder="Código da moeda">
+                <datalist id="opcoes">
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="CNY">Yuan Chinês (CNY)</option>
+                    <option value="CAD">Dólar Canadense (CAD)</option>
+                    <option value="AUD">Dólar Australiano (AUD)</option>
+                    <option value="CHF">Franco Suíço (CHF)</option>
+                    <option value="ARS">Peso Argentino (ARS)</option>
+                    <option value="CLP">Peso Chileno (CLP)</option>
+                    <option value="MXN">Peso Mexicano (MXN)</option>
+                    <option value="INR">Rúpia Indiana (INR)</option>
+                    <option value="RUB">Rublo Russo (RUB)</option>
+                    <option value="ZAR">Rand Sul-Africano (ZAR)</option>
+                    <option value="KRW">Won Sul-Coreano (KRW)</option>
+                    <option value="TRY">Lira Turca (TRY)</option>
+                    <option value="AED">Dirham dos Emirados (AED)</option>
+                    <option value="SEK">Coroa Sueca (SEK)</option>
+                    <option value="NOK">Coroa Norueguesa (NOK)</option>
+                </datalist>
+                <input type="number" id="moeda1" min="0" placeholder="Valor da moeda1">
+                <input list="opcoes2" id="pesquisa2" name="opcao2" placeholder="Código da moeda">
+                <datalist id="opcoes2">
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="CNY">Yuan Chinês (CNY)</option>
+                    <option value="CAD">Dólar Canadense (CAD)</option>
+                    <option value="AUD">Dólar Australiano (AUD)</option>
+                    <option value="CHF">Franco Suíço (CHF)</option>
+                    <option value="ARS">Peso Argentino (ARS)</option>
+                    <option value="CLP">Peso Chileno (CLP)</option>
+                    <option value="MXN">Peso Mexicano (MXN)</option>
+                    <option value="INR">Rúpia Indiana (INR)</option>
+                    <option value="RUB">Rublo Russo (RUB)</option>
+                    <option value="ZAR">Rand Sul-Africano (ZAR)</option>
+                    <option value="KRW">Won Sul-Coreano (KRW)</option>
+                    <option value="TRY">Lira Turca (TRY)</option>
+                    <option value="AED">Dirham dos Emirados (AED)</option>
+                    <option value="SEK">Coroa Sueca (SEK)</option>
+                    <option value="NOK">Coroa Norueguesa (NOK)</option>
+                </datalist>
+            </div>
+            <button id="botao" onclick="converter()">Converter</button>
+            <div id="res"></div>
         </section>
     </main>
     <script src="script.js"></script>
